@@ -148,8 +148,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Features Section */}
-      <FeaturesSection />
 
       {/* CTA Section */}
       <section className="py-16 bg-gradient-luxury text-white">
