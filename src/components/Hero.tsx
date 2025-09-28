@@ -1,14 +1,9 @@
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Star, Shield, Award } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import projectEntrance from '@/assets/project-entrance.jpg';
 
 const Hero = () => {
-  const features = [
-    { icon: Star, text: 'Premium Location in Lekki' },
-    { icon: Shield, text: 'Secure Investment' },
-    { icon: Award, text: 'Rotary Quality Assurance' },
-  ];
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -38,15 +33,6 @@ const Hero = () => {
               </p>
             </div>
 
-            {/* Features */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-              {features.map((feature, index) => (
-                <div key={index} className="flex items-center space-x-2">
-                  <feature.icon className="h-5 w-5 text-accent" />
-                  <span className="text-sm font-medium">{feature.text}</span>
-                </div>
-              ))}
-            </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
@@ -102,12 +88,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/60 animate-bounce">
-        <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white/50 rounded-full mt-2"></div>
-        </div>
-      </div>
     </section>
   );
 };

@@ -18,7 +18,7 @@ const Header = () => {
   const isActive = (href: string) => location.pathname === href;
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-transparent">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
@@ -26,10 +26,10 @@ const Header = () => {
             <img 
               src={rotaryLogo} 
               alt="Rotary Club of Lekki Golden" 
-              className="h-8 md:h-10 w-auto"
+              className="h-16 md:h-20 w-auto"
             />
             <div className="hidden sm:block">
-              <h1 className="text-lg md:text-xl font-bold text-primary">
+              <h1 className="text-lg md:text-xl font-bold text-white">
                 Rotary Wheels Court
               </h1>
             </div>
@@ -41,10 +41,10 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-sm font-medium transition-colors duration-200 ${
+                 className={`text-sm font-medium transition-colors duration-200 ${
                   isActive(item.href)
                     ? 'text-accent border-b-2 border-accent'
-                    : 'text-foreground hover:text-accent'
+                    : 'text-white hover:text-accent'
                 }`}
               >
                 {item.name}

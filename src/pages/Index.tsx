@@ -7,8 +7,8 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { ArrowRight, Award, Users, TrendingUp, Shield } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import heroProperty from '@/assets/hero-property.jpg';
-import interiorLiving from '@/assets/interior-living.jpg';
+import projectExterior from '@/assets/project-exterior.jpg';
+import projectAerial from '@/assets/project-aerial.jpg';
 
 const Index = () => {
   const featuredProperties = [
@@ -20,7 +20,7 @@ const Index = () => {
       originalPrice: '₦70M',
       paymentPlan: '16-18 Months',
       monthlyPayment: '₦3.3M',
-      image: heroProperty,
+      image: projectExterior,
       features: [
         'All Ensuite with Ante-room',
         'Living Room & Dining',
@@ -36,7 +36,7 @@ const Index = () => {
       originalPrice: '₦80M',
       paymentPlan: '16-18 Months',
       monthlyPayment: '₦3.6M',
-      image: interiorLiving,
+      image: projectAerial,
       features: [
         'All Ensuite with Ante-room',
         'Spacious Living Areas',
