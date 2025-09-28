@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Star, Shield, Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import heroProperty from '@/assets/hero-property.jpg';
+import projectEntrance from '@/assets/project-entrance.jpg';
 
 const Hero = () => {
   const features = [
@@ -15,7 +15,7 @@ const Hero = () => {
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroProperty})` }}
+        style={{ backgroundImage: `url(${projectEntrance})` }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-transparent" />
       </div>

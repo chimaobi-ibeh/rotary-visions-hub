@@ -3,6 +3,7 @@ import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge';
 import { Bed, Bath, Home, MapPin, Calendar, Banknote } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import projectAerial from '@/assets/project-aerial.jpg';
 
 interface PropertyCardProps {
   title: string;
@@ -34,7 +35,7 @@ const PropertyCard = ({
       <CardHeader className="p-0">
         <div className="relative overflow-hidden">
           <img 
-            src={image} 
+            src={image || projectAerial} 
             alt={title}
             className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
           />

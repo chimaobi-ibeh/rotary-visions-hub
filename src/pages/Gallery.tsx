@@ -6,58 +6,59 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 import { Eye, Upload, Image as ImageIcon } from 'lucide-react';
-import heroProperty from '@/assets/hero-property.jpg';
-import amenitiesImage from '@/assets/amenities.jpg';
-import interiorLiving from '@/assets/interior-living.jpg';
+import projectStreetView from '@/assets/project-street-view.jpg';
+import projectEntrance from '@/assets/project-entrance.jpg';
+import projectAmenities from '@/assets/project-amenities.jpg';
+import projectExterior from '@/assets/project-exterior.jpg';
+import projectAerial from '@/assets/project-aerial.jpg';
+import projectTopView from '@/assets/project-topview.jpg';
 
 const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  // Sample images - you mentioned you'll upload more later
   const galleryImages = [
     {
       id: 1,
-      src: heroProperty,
-      title: 'Exterior Architecture',
+      src: projectEntrance,
+      title: 'Main Entrance - Rotary Wheels Court',
       category: 'exterior',
-      description: 'Modern duplex exterior design with premium finishes'
+      description: 'Grand entrance with Rotary branding and premium architectural design'
     },
     {
       id: 2,
-      src: interiorLiving,
-      title: 'Living Room Interior',
-      category: 'interior',
-      description: 'Spacious living area with contemporary design'
+      src: projectStreetView,
+      title: 'RC Lekki Golden Street View',
+      category: 'exterior',
+      description: 'Modern street frontage with contemporary design and landscaping'
     },
     {
       id: 3,
-      src: amenitiesImage,
-      title: 'Premium Amenities',
+      src: projectAmenities,
+      title: 'Gym & Minimart Facilities',
       category: 'amenities',
-      description: 'Resort-style amenities including pool and recreational areas'
+      description: 'On-site fitness center and convenience store for residents'
     },
-    // Placeholder for more images
     {
       id: 4,
-      src: heroProperty,
-      title: 'Building Facade',
+      src: projectExterior,
+      title: 'Four-Way Test & Community Area',
       category: 'exterior',
-      description: 'Elegant building design and landscaping'
+      description: 'Rotary values displayed with modern architecture and open spaces'
     },
     {
       id: 5,
-      src: interiorLiving,
-      title: 'Master Bedroom',
-      category: 'interior',
-      description: 'Luxurious master bedroom with walk-in closet'
+      src: projectAerial,
+      title: 'Aerial Development View',
+      category: 'exterior',
+      description: 'Complete estate layout showing blue-roofed luxury duplexes'
     },
     {
       id: 6,
-      src: amenitiesImage,
-      title: 'Swimming Pool Area',
+      src: projectTopView,
+      title: 'Individual Units & Pool Area',
       category: 'amenities',
-      description: 'Resort-style swimming pool and relaxation area'
+      description: 'Top view showcasing individual properties with private pools and gardens'
     }
   ];
 
