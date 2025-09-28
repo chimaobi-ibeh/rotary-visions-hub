@@ -103,9 +103,9 @@ const FeaturesSection = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent" />
               <div className="absolute bottom-6 left-6 text-white">
-                <h3 className="text-2xl font-bold mb-2">Resort-Style Living</h3>
+                <h3 className="text-2xl font-bold mb-2">Premium Amenities</h3>
                 <p className="text-white/90">
-                  Premium amenities designed for your comfort and convenience
+                  Luxury facilities designed for your comfort and convenience
                 </p>
               </div>
             </div>

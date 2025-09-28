@@ -77,17 +77,6 @@ const Properties = () => {
             <p className="text-xl text-white/90 mb-8">
               Discover luxury duplex homes designed for modern investors with excellent rental income potential
             </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Badge className="bg-accent text-accent-foreground text-sm px-4 py-2">
-                Zero Interest Payment Plans
-              </Badge>
-              <Badge className="bg-white/20 text-white text-sm px-4 py-2">
-                Ready by 2025
-              </Badge>
-              <Badge className="bg-white/20 text-white text-sm px-4 py-2">
-                Rotary Quality Assured
-              </Badge>
-            </div>
           </div>
         </div>
       </section>
