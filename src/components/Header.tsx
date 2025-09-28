@@ -52,12 +52,6 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* CTA Button */}
-          <div className="hidden lg:block">
-            <Button variant="golden" size="lg" asChild>
-              <Link to="/contact">Contact</Link>
-            </Button>
-          </div>
 
           {/* Mobile Menu Button */}
           <Button
@@ -88,13 +82,6 @@ const Header = () => {
                   {item.name}
                 </Link>
               ))}
-              <div className="px-4 pt-2">
-                <Button variant="golden" className="w-full" asChild>
-                  <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
-                    Contact
-                  </Link>
-                </Button>
-              </div>
             </nav>
           </div>
         )}
