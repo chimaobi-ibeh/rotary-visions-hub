@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
-import rotaryLogo from '@/assets/rotary-logo.png';
+import rotaryLogo from '@/assets/rotary-logo.jpg';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -55,7 +55,7 @@ const Header = () => {
           {/* CTA Button */}
           <div className="hidden lg:block">
             <Button variant="golden" size="lg" asChild>
-              <Link to="/contact">Show Interest</Link>
+              <Link to="/contact">Contact</Link>
             </Button>
           </div>
 
@@ -91,7 +91,7 @@ const Header = () => {
               <div className="px-4 pt-2">
                 <Button variant="golden" className="w-full" asChild>
                   <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
-                    Show Interest
+                    Contact
                   </Link>
                 </Button>
               </div>
