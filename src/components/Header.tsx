@@ -18,7 +18,7 @@ const Header = () => {
   const isActive = (href: string) => location.pathname === href;
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-transparent">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
@@ -29,7 +29,7 @@ const Header = () => {
               className="h-16 md:h-20 w-auto"
             />
             <div className="hidden sm:block">
-              <h1 className="text-lg md:text-xl font-bold text-white">
+              <h1 className="text-lg md:text-xl font-bold text-foreground">
                 Rotary Wheels Court
               </h1>
             </div>
@@ -44,7 +44,7 @@ const Header = () => {
                  className={`text-sm font-medium transition-colors duration-200 ${
                   isActive(item.href)
                     ? 'text-accent border-b-2 border-accent'
-                    : 'text-white hover:text-accent'
+                    : 'text-foreground hover:text-accent'
                 }`}
               >
                 {item.name}
@@ -55,7 +55,7 @@ const Header = () => {
           {/* CTA Button */}
           <div className="hidden lg:block">
             <Button variant="golden" size="lg" asChild>
-              <Link to="/contact">Show Interest</Link>
+              <Link to="/contact">Contact</Link>
             </Button>
           </div>
 
@@ -63,7 +63,7 @@ const Header = () => {
           <Button
             variant="ghost"
             size="icon"
-            className="lg:hidden"
+            className="lg:hidden text-foreground"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X /> : <Menu />}
@@ -91,7 +91,7 @@ const Header = () => {
               <div className="px-4 pt-2">
                 <Button variant="golden" className="w-full" asChild>
                   <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
-                    Show Interest
+                    Contact
                   </Link>
                 </Button>
               </div>
