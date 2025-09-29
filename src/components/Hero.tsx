@@ -64,27 +64,6 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Content - Stats */}
-          <div className="space-y-6">
-            <div className="grid grid-cols-2 gap-6">
-              {[
-                { number: '2', label: 'Property Types', suffix: '' },
-                { number: '18', label: 'Month Payment Plan', suffix: '' },
-                { number: '100', label: 'Rental Yield', suffix: '%' },
-                { number: '2025', label: 'Completion', suffix: '' },
-              ].map((stat, index) => (
-                <div 
-                  key={index} 
-                  className="bg-white/10 backdrop-blur-md rounded-lg p-6 border border-white/20 text-center"
-                >
-                  <div className="text-2xl md:text-3xl font-bold text-accent">
-                    {stat.number}{stat.suffix}
-                  </div>
-                  <div className="text-sm text-white/80 mt-2">{stat.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
 

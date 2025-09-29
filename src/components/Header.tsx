@@ -26,13 +26,8 @@ const Header = () => {
             <img 
               src={rotaryLogo} 
               alt="Rotary Club of Lekki Golden" 
-              className="h-16 md:h-20 w-auto"
+              className="h-20 md:h-24 w-auto"
             />
-            <div className="hidden sm:block">
-              <h1 className="text-lg md:text-xl font-bold text-foreground">
-                Rotary Wheels Court
-              </h1>
-            </div>
           </Link>
 
           {/* Desktop Navigation */}
