@@ -17,15 +17,15 @@ const Header = () => {
   const isActive = (href: string) => location.pathname === href;
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background border-b border-border shadow-sm">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center justify-between h-20 md:h-24">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <img 
               src="/images/rotary-logo.png" 
               alt="Rotary Club of Lekki Golden" 
-              className="h-20 md:h-24 w-auto"
+              className="h-24 md:h-28 w-auto"
             />
           </Link>
 
@@ -35,7 +35,7 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                 className={`text-sm font-medium transition-colors duration-200 ${
+                 className={`text-base font-medium transition-colors duration-200 ${
                   isActive(item.href)
                     ? 'text-accent border-b-2 border-accent'
                     : 'text-foreground hover:text-accent'
@@ -66,7 +66,7 @@ const Header = () => {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`text-sm font-medium px-4 py-2 transition-colors duration-200 ${
+                  className={`text-base font-medium px-4 py-2 transition-colors duration-200 ${
                     isActive(item.href)
                       ? 'text-accent bg-accent/10 rounded-md'
                       : 'text-foreground hover:text-accent'
