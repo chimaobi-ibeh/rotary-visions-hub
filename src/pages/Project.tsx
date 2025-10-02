@@ -63,34 +63,90 @@ const Project = () => {
     },
     {
       id: 2,
+      src: '/images/main-gate-entrance.jpg',
+      title: 'Main Gate & Security',
+      category: 'exterior',
+      description: 'Secured main gate entrance with modern architecture and premium landscaping'
+    },
+    {
+      id: 3,
+      src: '/images/victoria-island-sign.jpg',
+      title: 'RC Victoria Island Street',
+      category: 'exterior',
+      description: 'Premium street signage with Rotary branding and reflective water features'
+    },
+    {
+      id: 4,
+      src: '/images/rotary-street-logo.jpg',
+      title: 'Rotary Emblem Street View',
+      category: 'exterior',
+      description: 'Rotary International logo embedded in premium street design'
+    },
+    {
+      id: 5,
+      src: '/images/victoria-island-entrance.jpg',
+      title: 'Victoria Island Entrance View',
+      category: 'exterior',
+      description: 'Elegant entrance with Victoria Island street signage'
+    },
+    {
+      id: 6,
+      src: '/images/row-houses-front.jpg',
+      title: 'Terraced Duplex Frontage',
+      category: 'exterior',
+      description: 'Modern terraced duplexes with yellow accent frames and spacious parking'
+    },
+    {
+      id: 7,
+      src: '/images/row-houses-view.jpg',
+      title: 'Semi-Detached Units',
+      category: 'exterior',
+      description: 'Premium semi-detached duplexes with contemporary design and private driveways'
+    },
+    {
+      id: 8,
       src: '/images/project-street-view.jpg',
       title: 'RC Lekki Golden Street View',
       category: 'exterior',
       description: 'Modern street frontage with contemporary design and landscaping'
     },
     {
-      id: 3,
+      id: 9,
+      src: '/images/street-recycling.jpg',
+      title: 'Street Infrastructure',
+      category: 'amenities',
+      description: 'Well-planned street layout with eco-friendly waste management systems'
+    },
+    {
+      id: 10,
+      src: '/images/side-street-view.jpg',
+      title: 'Internal Street View',
+      category: 'exterior',
+      description: 'Interior street view with premium fencing and green spaces'
+    },
+    {
+      id: 11,
       src: '/images/project-amenities.jpg',
       title: 'Gym & Minimart Facilities',
       category: 'amenities',
       description: 'On-site fitness center and convenience store for residents'
     },
     {
-      id: 4,
+      id: 12,
       src: '/images/project-exterior.jpg',
       title: 'Four-Way Test & Community Area',
       category: 'exterior',
       description: 'Rotary values displayed with modern architecture and open spaces'
     },
     {
-      id: 5,
+      id: 13,
       src: '/images/project-aerial.jpg',
       title: 'Aerial Development View',
       category: 'exterior',
       description: 'Complete estate layout showing blue-roofed luxury duplexes'
     },
     {
-      id: 6,
+      id: 14,
       src: '/images/project-topview.jpg',
       title: 'Individual Units & Pool Area',
       category: 'amenities',
@@ -113,7 +169,7 @@ const Project = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-12 bg-gradient-hero text-white">
+      <section className="pt-40 pb-12 bg-gradient-hero text-white">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
