@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
-import rotaryLogo from '@/assets/rotary-logo.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,8 +9,8 @@ const Header = () => {
 
   const navigation = [
     { name: 'Home', href: '/' },
-    { name: 'Properties', href: '/properties' },
-    { name: 'Gallery', href: '/gallery' },
+    { name: 'The Project', href: '/project' },
+    { name: 'About', href: '/about' },
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -24,7 +23,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <img 
-              src={rotaryLogo} 
+              src="/images/rotary-logo.png" 
               alt="Rotary Club of Lekki Golden" 
               className="h-20 md:h-24 w-auto"
             />

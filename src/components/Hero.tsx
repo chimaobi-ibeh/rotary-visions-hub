@@ -1,7 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import projectEntrance from '@/assets/project-entrance.jpg';
 
 const Hero = () => {
 
@@ -10,7 +9,7 @@ const Hero = () => {
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${projectEntrance})` }}
+        style={{ backgroundImage: `url(/images/project-entrance.jpg)` }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-transparent" />
       </div>
@@ -37,8 +36,8 @@ const Hero = () => {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="golden" size="lg" className="text-lg px-8" asChild>
-                <Link to="/properties">
-                  View Properties <ArrowRight className="ml-2 h-5 w-5" />
+                <Link to="/project">
+                  View Project <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
               <Button 

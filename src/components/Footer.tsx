@@ -1,12 +1,11 @@
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
-import rotaryLogo from '@/assets/rotary-logo.png';
 
 const Footer = () => {
   const quickLinks = [
     { name: 'Home', href: '/' },
-    { name: 'Properties', href: '/properties' },
-    { name: 'Gallery', href: '/gallery' },
+    { name: 'The Project', href: '/project' },
+    { name: 'About', href: '/about' },
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -25,7 +24,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
               <img 
-                src={rotaryLogo} 
+                src="/images/rotary-logo.png" 
                 alt="Rotary Club of Lekki Golden" 
                 className="h-10 w-auto filter brightness-0 invert"
               />

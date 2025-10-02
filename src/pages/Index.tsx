@@ -7,8 +7,6 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { ArrowRight, Award, Users, TrendingUp, Shield } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import projectExterior from '@/assets/project-exterior.jpg';
-import projectAerial from '@/assets/project-aerial.jpg';
 
 const Index = () => {
   const featuredProperties = [
@@ -20,7 +18,7 @@ const Index = () => {
       originalPrice: '₦70M',
       paymentPlan: '16-18 Months',
       monthlyPayment: '₦3.3M',
-      image: projectExterior,
+      image: '/images/project-exterior.jpg',
       features: [
         'All Ensuite with Ante-room',
         'Living Room & Dining',
@@ -36,7 +34,7 @@ const Index = () => {
       originalPrice: '₦80M',
       paymentPlan: '16-18 Months',
       monthlyPayment: '₦3.6M',
-      image: projectAerial,
+      image: '/images/project-aerial.jpg',
       features: [
         'All Ensuite with Ante-room',
         'Spacious Living Areas',
@@ -140,8 +138,8 @@ const Index = () => {
 
           <div className="text-center mt-12">
             <Button variant="golden" size="lg" asChild>
-              <Link to="/properties">
-                View All Properties <ArrowRight className="ml-2 h-5 w-5" />
+              <Link to="/project">
+                View The Project <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
           </div>
@@ -171,7 +169,7 @@ const Index = () => {
                 className="text-lg px-8 bg-white/10 border-white/30 text-white hover:bg-white hover:text-primary"
                 asChild
               >
-                <Link to="/gallery">View Gallery</Link>
+                <Link to="/project">View Project</Link>
               </Button>
             </div>
             <div className="mt-8 text-sm text-white/70">
