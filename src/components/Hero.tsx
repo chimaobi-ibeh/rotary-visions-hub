@@ -57,9 +57,6 @@ const Hero = () => {
                 <span className="text-3xl font-bold text-accent">₦65M</span>
                 <span className="text-white/80">3-Bedroom Duplex</span>
               </div>
-              <p className="text-sm text-white/70 mt-2">
-                Flexible payment plans available • Zero interest options
-              </p>
             </div>
           </div>
 
