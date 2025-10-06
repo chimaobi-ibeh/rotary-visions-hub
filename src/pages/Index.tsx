@@ -1,8 +1,8 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import Hero from '@/components/Hero';
-import FeaturesSection from '@/components/FeaturesSection';
-import PropertyCard from '@/components/PropertyCard';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
+import Hero from '@/components/sections/Hero';
+import FeaturesSection from '@/components/sections/FeaturesSection';
+import PropertyCard from '@/components/property/PropertyCard';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { ArrowRight, Award, Users, TrendingUp, Shield } from 'lucide-react';
